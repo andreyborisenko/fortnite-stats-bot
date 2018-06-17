@@ -26,7 +26,9 @@ const getScreenshot = (username, platform) => {
 }
 
 const takeScreenshot = async (pagePath, screenPath) => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
   await page.setViewport({ width: 400, height: 600 })
   await page.goto(`file:///${pagePath.replace(/\\/g, '/')}`);
