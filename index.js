@@ -103,7 +103,7 @@ bot.onText(/\/setme (\w+)\s+(\w+)/, async (msg, [, platform, username]) => {
 	if (!platform || !username) 
 		return bot.sendMessage(chatId, `
 		You missed platform or username parametrs.
-Usage <b>/setMe</b> <em>[platform]</em> <em>[nickname]</em>
+Usage <b>/setme</b> <em>[platform]</em> <em>[nickname]</em>
 		`, {
 			parse_mode: 'html'
 		})
