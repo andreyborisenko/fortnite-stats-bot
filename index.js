@@ -146,3 +146,10 @@ bot.onText(/^\/me$/, async ({ from: { id: fromId },chat: { id: chatId }}) => {
 			})
 		})
 })
+
+const server = require('http').createServer((req, res) => {
+	res.writeHead(200, { 'Content-Type': 'text/markdown' });
+  res.end('Fortnite stats bot telegram [@FortniteStatisticsBot](https://t.me/FortniteStatisticsBot)');
+})
+
+server.listen(process.env.PORT || 3000, () => `Server started`)
