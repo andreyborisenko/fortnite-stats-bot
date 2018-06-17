@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #343434;
+	color: #fff;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.content {
+	background: repeating-linear-gradient(45deg, #282828 1px, #282828 4px, #1f1f1f 5px, #1f1f1f 24px, 
+		#282828 25px,#282828 28px, #38393b 29px, #38393b 49px, #282828 50px);
+	width: 400px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	font-family: 'Anton', sans-serif;
+	border: 10px solid #FACD81;
+	box-sizing: border-box;
+}
+
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	height: 100px;
+	margin-bottom: 30px;
+}
+
+.username {
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+
+.platform {
+	font-size: 30px;
+	color: #ccc;
+	text-align: center;
+}
+
+.stats {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.stats div {
+	box-sizing: border-box;
+	padding: 3px;
+	text-align: center;
+	font-size: 35px;
+	margin: 5px 0;
+}

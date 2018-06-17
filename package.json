@@ -1,0 +1,20 @@
+{
+  "name": "fortnite-stats-bot",
+  "version": "1.0.0",
+  "description": "Fortnite statisctics bot for telegram. Group your stats in one picture and use it everywhere :)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "config": "^1.30.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "pouchdb": "^6.4.3",
+    "pug": "^2.0.3",
+    "puppeteer": "^1.5.0"
+  },
+  "repository": "https://github.com/andreyborisenko/fortnite-stats-bot.git",
+  "author": "Andrey Borisenko <andrey.borisenko23@gmail.com>",
+  "license": "MIT"
+}

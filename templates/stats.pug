@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+  .content
+    .userinfo
+      .username #{username}
+      .platform (#{platform})
+    .stats 
+      each v in stats
+        div= v.key + ': ' + v.value 
